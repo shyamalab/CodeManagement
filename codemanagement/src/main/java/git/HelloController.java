@@ -18,6 +18,11 @@ public class HelloController {
         return "Hello World!";
     }
 
+  @RequestMapping("/welcome")
+    String welcome() {
+        return "Welcome to Git Repository";
+    }
+
     @Data
     static class Result {
         private final int left;
